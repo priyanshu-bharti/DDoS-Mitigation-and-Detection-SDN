@@ -1,0 +1,22 @@
+Terminal 1
+-----------
+
+ryu-manager t_normal.py
+ryu-manager t_attack.py
+
+ryu-manager m_normal.py
+ryu-manager m_attack.py
+
+
+Terminal 2
+-----------
+
+sudo python2 topo_normal.py && sudo mn -c
+sudo python2 topo_attack.py && sudo mn -c
+
+sudo python2 topo_normal.py
+sudo python2 topo_attack.py
+
+sudo python3 accuracy.py;
+sudo python3 rate.py;
+sudo python3 graph.py;

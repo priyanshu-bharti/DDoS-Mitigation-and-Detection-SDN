@@ -1,0 +1,12 @@
+ryu-manager t_normal.py
+sudo python2 topo_normal.py && sudo mn -c
+ryu-manager t_attack.py
+sudo python2 topo_attack.py && sudo mn -c
+ryu-manager m_normal.py
+sudo python2 topo_normal.py && sudo mn -c
+ryu-manager m_attack.py
+sudo python2 topo_attack.py && sudo mn -c
+
+sudo python3 accuracy.py
+sudo python3 rate.py
+sudo python3 graph.py
